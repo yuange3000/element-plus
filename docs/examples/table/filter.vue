@@ -74,6 +74,7 @@ const filterHandler = (
   row: User,
   column: TableColumnCtx<User>
 ) => {
+ console.log(value,row,column['property'])
   const property = column['property']
   return row[property] === value
 }
